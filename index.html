@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- !! ---------- META TAGS ----------- -->
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- !! ---------- FONTS AND ICONS ----------- -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&family=Roboto:wght@400;500;700;900&display=swap"
+			rel="stylesheet"
+		/>
+		<script
+			src="https://kit.fontawesome.com/b35556898e.js"
+			crossorigin="anonymous"
+		></script>
+
+		<link rel="icon" type="image/x-icon" href="./assets/favicon.png" />
+
+		<!-- !! --------------- CSS/JS --------------- -->
+		<link rel="stylesheet" href="./src/style.css" />
+		<!-- !! --------------- Title ---------------- -->
+		<title>FSDM ROBOTIC</title>
+	</head>
+	<body>
+		<header>
+			<img loading="lazy" src="./assets/Logo.png" alt="FSDM robotic Logo" />
+			<ul class="nav">
+				<li class="nav-item" data-content="Home"><a href="/">Home</a></li>
+				<li class="nav-item" data-content="About">
+					<a href="./src/About/about.html">About</a>
+				</li>
+				<li class="nav-item" data-content="Events">
+					<a href="./src/Events/events.html">Events</a>
+				</li>
+				<li class="nav-item" data-content="Team & Contact">
+					<a href="./src/Team/team.html">Team & Contact</a>
+				</li>
+			</ul>
+			<div class="menu-icon">
+				<i class="fas fa-bars"></i>
+			</div>
+		</header>
+		<section class="introduction">
+			<h1 class="main-title">
+				<i class="fa-sharp fa-solid fa-minus"></i>FSDM robotic club
+			</h1>
+			<p class="club-description">
+				Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus
+				autem obcaecati impedit id dolor minus incidunt porro, culpa repudiandae
+				unde minima similique odit enim itaque!
+			</p>
+			<div class="buttons">
+				<button type="button" class="call-to-action btn" id="scrollButton">
+					Join the club now
+				</button>
+				<button class="learn-more but">
+					<span class="circle" aria-hidden="true">
+						<span class="icon arrow"></span>
+					</span>
+					<span class="but-text">Learn More</span>
+				</button>
+			</div>
+		</section>
+		<section class="objective">
+			<h2 class="section-title">
+				<i class="fa-solid fa-plus"></i>
+				<span id="section-title" data-value="our objective">our objective</span>
+			</h2>
+			<div id="cards" class="cards-container">
+				<div class="card">
+					<div class="card-content">
+						<div class="card-image">
+							<img loading="lazy" src="./assets/creativity.png" alt="" />
+						</div>
+						<div class="card-info-wrapper">
+							<div class="card-info">
+								<div class="card-info-title">
+									<h3>creativity</h3>
+									<h4>
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab
+										numquam veritatis sint explicabo voluptates tempore?
+									</h4>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-content">
+						<div class="card-image">
+							<img loading="lazy" src="./assets/idea.png" alt="" />
+						</div>
+						<div class="card-info-wrapper">
+							<div class="card-info">
+								<div class="card-info-title">
+									<h3>idea</h3>
+									<h4>
+										Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+										Facilis laborum maxime reiciendis ullam, nobis eum!
+									</h4>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-content">
+						<div class="card-image">
+							<img loading="lazy" src="./assets/gathering.png" alt="" />
+						</div>
+						<div class="card-info-wrapper">
+							<div class="card-info">
+								<div class="card-info-title">
+									<h3>gathering</h3>
+									<h4>
+										Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+										Ullam nemo quae minus soluta deserunt dolores!
+									</h4>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="add" id="add">
+			<h2 class="section-title">
+				<i class="fa-solid fa-plus"></i>
+				<span id="sectionTitle" data-value="announcement">announcement</span>
+			</h2>
+			<div class="add-content">
+				<div class="add-right">
+					<label for="email">Sign up for our newsletter</label>
+					<p class="add-text">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
+						expedita doloribus, numquam sint quae assumenda error autem possimus
+						eius atque vel non sunt illum quos vitae, praesentium natus maiores
+						excepturi ipsam quis voluptates ipsum magni
+					</p>
+					<form class="sign-up">
+						<input
+							type="email"
+							name="email"
+							id="email"
+							placeholder="example@example.com"
+						/>
+						<button aria-label="Sign up for our newsletter" class="submit">
+							<div class="temp"><i class="fa-solid fa-paper-plane"></i></div>
+							<span class="span"> Sign up</span>
+						</button>
+					</form>
+				</div>
+				<div class="add-pic">
+					<img
+						loading="lazy"
+						src="./assets/Add.jpeg"
+						alt="announcement-image"
+					/>
+				</div>
+			</div>
+		</section>
+		<footer>
+			<div class="contact">
+				<h2 class="section-title">
+					<i class="fa-solid fa-plus"></i>
+					<span id="section3title" data-value="Contact Us">Contact Us</span>
+				</h2>
+				<div class="social-links">
+					<div class="social-link facebook">
+						<a href="#">
+							<i class="fa-brands fa-facebook"></i>
+							<span>@FSDM-ROBOTIC</span>
+						</a>
+					</div>
+					<div class="social-link insta">
+						<a href="#">
+							<i class="fa-brands fa-instagram"></i>
+							<span>@FSDM-ROBOTIC</span>
+						</a>
+					</div>
+					<div class="social-link twitter">
+						<a href="#">
+							<i class="fa-brands fa-twitter"></i>
+							<span>#FSDM-ROBOTIC</span>
+						</a>
+					</div>
+					<div class="social-link email">
+						<a href="#">
+							<i class="fa-solid fa-envelope"></i>
+							<span>FSDM-ROBOTIC@gmail.com</span>
+						</a>
+					</div>
+				</div>
+			</div>
+			<img
+				loading="lazy"
+				src="./assets/second-logo.png"
+				alt=""
+				class="second-logo"
+			/>
+			<!-- <img
+				loading="lazy"
+				src="./assets/second-logo.png"
+				alt=""
+				class="second-logo"
+			/> -->
+		</footer>
+		<div class="container" id="grid-container"></div>
+		
+		<script src="./src/script.js" async="true"></script>
+	</body>
+</html>

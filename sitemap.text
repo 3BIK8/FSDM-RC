@@ -1,0 +1,61 @@
+- Home Page
+  - Header (Navigation Links)
+    - Home
+    - Objective
+    - Gallery
+    - Events
+    - Our Team
+    - Contact
+  - Section 1 (s1)
+    - Club Introduction
+    - Call to Action (Join Now Button)
+  - Section 2 (s2 - Objective)
+    - Brief Goals Overview
+  - Section 3 (s3 - Gallery)
+    - Highlighted Images from Gallery
+    - View More Link (More Images)
+  - Section 4 (s4 - Events)
+    - Upcoming Events Overview
+    - View All Events Link
+  - Footer
+    - Copyright Information
+    - Social Media Links
+  - JavaScript Files (Script.js, particles.min.js, app.js)
+
+- About Page
+  - Header (Navigation Links)
+  - Detailed About Club Content
+    - History
+    - Mission
+    - Objectives
+    - Our Team (Team Members)
+  - Footer
+  - JavaScript Files
+
+- Gallery Page
+  - Header (Navigation Links)
+  - Full Image Gallery
+    - All Images
+  - Footer
+  - JavaScript Files
+
+- Events Page
+  - Header (Navigation Links)
+  - Full List of Events
+    - Event 1
+      - Event Details
+      - Event Date
+      - Registration Link
+    - Event 2
+      - Event Details
+      - Event Date
+      - Registration Link
+    - ...
+  - Footer
+  - JavaScript Files
+
+- Contact Page
+  - Header (Navigation Links)
+  - Contact Information
+  - Contact Form
+845px
