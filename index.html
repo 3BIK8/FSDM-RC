@@ -1,11 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<!-- !! ---------- META TAGS ----------- -->
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-		<!-- !! ---------- FONTS AND ICONS ----------- -->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
@@ -18,119 +15,185 @@
 		></script>
 
 		<link rel="icon" type="image/x-icon" href="./assets/favicon.png" />
-
-		<!-- !! --------------- CSS/JS --------------- -->
-		<link rel="stylesheet" href="./src/style.css" />
-		<!-- !! --------------- Title ---------------- -->
-		<title>FSDM ROBOTIC</title>
+		<!-- ########################################### -->
+		<link rel="stylesheet" href="./src/about.css" />
+		<link rel="stylesheet" href="../../atropos/atropos.min.css" />
+		<!-- ########################################### -->
+		<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+		<title>FSDM-ROBOTIC About</title>
 	</head>
 	<body>
 		<header>
 			<img loading="lazy" src="./assets/Logo.png" alt="FSDM robotic Logo" />
 			<ul class="nav">
-				<li class="nav-item" data-content="Home"><a href="/">Home</a></li>
-				<li class="nav-item" data-content="About">
-					<a href="./src/About/about.html">About</a>
+				<li class="nav-item" data-content="Home">
+					<a href="./index.html">Home</a>
 				</li>
 				<li class="nav-item" data-content="Events">
-					<a href="./src/Events/events.html">Events</a>
+					<a href="/src/Events/events.html">Events</a>
 				</li>
 				<li class="nav-item" data-content="Team & Contact">
-					<a href="./src/Team/team.html">Team & Contact</a>
+					<a href="/src/Team/team.html">Team & Contact</a>
 				</li>
 			</ul>
 			<div class="menu-icon">
 				<i class="fas fa-bars"></i>
 			</div>
 		</header>
-		<section class="introduction">
-			<h1 class="main-title">
-				<i class="fa-sharp fa-solid fa-minus"></i>FSDM robotic club
-			</h1>
-			<p class="club-description">
-				Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus
-				autem obcaecati impedit id dolor minus incidunt porro, culpa repudiandae
-				unde minima similique odit enim itaque!
-			</p>
-			<div class="buttons">
-				<button type="button" class="call-to-action btn" id="scrollButton">
-					Join the club now
-				</button>
-				<button class="learn-more but">
-					<span class="circle" aria-hidden="true">
-						<span class="icon arrow"></span>
-					</span>
-					<span class="but-text">Learn More</span>
-				</button>
-			</div>
-		</section>
-		<section class="objective">
-			<h2 class="section-title">
-				<i class="fa-solid fa-plus"></i>
-				<span id="section-title" data-value="our objective">our objective</span>
-			</h2>
-			<div id="cards" class="cards-container">
-				<div class="card">
-					<div class="card-content">
-						<div class="card-image">
-							<img loading="lazy" src="./assets/creativity.png" alt="" />
-						</div>
-						<div class="card-info-wrapper">
-							<div class="card-info">
-								<div class="card-info-title">
-									<h3>creativity</h3>
-									<h4>
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab
-										numquam veritatis sint explicabo voluptates tempore?
-									</h4>
-								</div>
-							</div>
-						</div>
-					</div>
+		<div id="container">
+			<span id="text1"></span>
+			<span id="text2"></span>
+		</div>
+		<svg id="filters">
+			<defs>
+				<filter id="threshold">
+					<!-- Basically just a threshold effect - pixels with a high enough opacity are set to full opacity, and all other pixels are set to completely transparent. -->
+					<feColorMatrix
+						in="SourceGraphic"
+						type="matrix"
+						values="1 0 0 0 0
+									0 1 0 0 0
+									0 0 1 0 0
+									0 0 0 255 -140"
+					/>
+				</filter>
+			</defs>
+		</svg>
+		<section class="s1">
+			<div class="overlay"></div>
+			<div class="statistics-infos">
+				<div class="statistic-info">
+					<span class="info-number" id="membersCount">0 +</span>
+					<span class="info-title">members</span>
 				</div>
-				<div class="card">
-					<div class="card-content">
-						<div class="card-image">
-							<img loading="lazy" src="./assets/idea.png" alt="" />
-						</div>
-						<div class="card-info-wrapper">
-							<div class="card-info">
-								<div class="card-info-title">
-									<h3>idea</h3>
-									<h4>
-										Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-										Facilis laborum maxime reiciendis ullam, nobis eum!
-									</h4>
-								</div>
-							</div>
-						</div>
-					</div>
+				<div class="statistic-info">
+					<span class="info-number" id="eventsCount">0 +</span>
+					<span class="info-title">events organized</span>
 				</div>
-				<div class="card">
-					<div class="card-content">
-						<div class="card-image">
-							<img loading="lazy" src="./assets/gathering.png" alt="" />
-						</div>
-						<div class="card-info-wrapper">
-							<div class="card-info">
-								<div class="card-info-title">
-									<h3>gathering</h3>
-									<h4>
-										Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-										Ullam nemo quae minus soluta deserunt dolores!
-									</h4>
-								</div>
-							</div>
-						</div>
-					</div>
+				<div class="statistic-info">
+					<span class="info-number" id="followersCount">0 +</span>
+					<span class="info-title">social media followers</span>
 				</div>
 			</div>
 		</section>
-		<section class="add" id="add">
-			<h2 class="section-title">
-				<i class="fa-solid fa-plus"></i>
-				<span id="sectionTitle" data-value="announcement">announcement</span>
-			</h2>
+		<section class="s2">
+			<h2 class="section-title">Our Motivation</h2>
+			<div class="s2-container">
+				<p class="s2-desc">
+					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio nulla
+					sequi itaque atque repudiandae dolorum cumque aliquam, est fugiat modi
+					praesentium libero veritatis ullam nisi accusamus iusto eligendi. Ad
+					quidem ipsam maxime dolorum suscipit a porro vel quaerat, temporibus
+					eos eveniet ratione deserunt obcaecati voluptatum veritatis voluptas
+					magni, cupiditate labore sed voluptatem. Omnis optio aut itaque
+					dolorum doloribus. Blanditiis nisi, velit aut culpa ad laboriosam
+					nesciunt eaque error natus ipsam dicta reiciendis nulla laudantium
+					quas nihil. Voluptates alias distinctio repellat. Ullam, sequi fuga
+					natus cupiditate quam dolorum, amet tempora non magni adipisci hic
+					architecto ipsam repellat laudantium temporibus, eligendi sapiente
+					optio rerum id delectus velit repudiandae? Maiores dolorum perferendis
+					cum sed eligendi! Necessitatibus officia cupiditate voluptate esse qui
+					praesentium fuga numquam! Ea placeat sit mollitia. Tempore fugit harum
+					a velit inventore. Neque similique reiciendis esse perspiciatis
+					explicabo ea, nisi ducimus accusamus. Excepturi aut officia assumenda!
+					Aliquid autem vel eius tempore blanditiis fugiat sequi minima, quo ab
+					dignissimos aperiam voluptatibus tenetur quidem assumenda ea hic,
+					accusantium velit et? Velit et iure officia alias magni suscipit sequi
+					doloremque, deserunt ipsum a molestias laboriosam assumenda qui labore
+					neque consequuntur, sint nemo repellendus totam doloribus rem
+					exercitationem facere minima? Architecto expedita est deleniti alias?
+				</p>
+				<div class="s2-img-container">
+					<img src="./assets/people.jpg" alt="image" />
+				</div>
+			</div>
+		</section>
+		<section class="s3">
+			<img src="./assets/second-logo2.png" alt="BG" />
+			<h2 class="section-title">& Our Goals</h2>
+			<div class="s3-container" id="cards">
+				<div class="atropos my-atropos">
+					<div class="atropos-scale">
+						<div class="atropos-rotate">
+							<div class="atropos-inner">
+								<div class="card">
+									<div class="card-icon">
+										<img src="./assets/A.jpg" alt="" />
+									</div>
+									<div class="card-info">
+										<h3 class="card-title">Creativty</h3>
+										<p class="card-desc">
+											Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+											Veritatis, repellendus deserunt modi vel hic nulla autem
+											expedita sunt molestiae animi culpa quis, eius sapiente
+											saepe reprehenderit distinctio aliquid voluptates dolore
+											accusantium ducimus a laboriosam commodi earum? Modi
+											deleniti praesentium dicta sed vero. Doloribus alias
+											deserunt necessitatibus ipsam asperiores dolorum illo.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="atropos my-atropos">
+					<div class="atropos-scale">
+						<div class="atropos-rotate">
+							<div class="atropos-inner">
+								<div class="card card-2">
+									<div class="card-info">
+										<h3 class="card-title">Idea</h3>
+										<p class="card-desc">
+											Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+											Veritatis, repellendus deserunt modi vel hic nulla autem
+											expedita sunt molestiae animi culpa quis, eius sapiente
+											saepe reprehenderit distinctio aliquid voluptates dolore
+											accusantium ducimus a laboriosam commodi earum? Modi
+											deleniti praesentium dicta sed vero. Doloribus alias
+											deserunt necessitatibus ipsam asperiores dolorum illo.
+										</p>
+									</div>
+									<div class="card-icon">
+										<img src="./assets/B.jpg" alt="" />
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="atropos my-atropos">
+					<div class="atropos-scale">
+						<div class="atropos-rotate">
+							<div class="atropos-inner">
+								<div class="card">
+									<div class="card-icon">
+										<img src="./assets/C.jpg" alt="" />
+									</div>
+									<div class="card-info">
+										<h3 class="card-title">Gathering</h3>
+										<p class="card-desc">
+											Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+											Veritatis, repellendus deserunt modi vel hic nulla autem
+											expedita sunt molestiae animi culpa quis, eius sapiente
+											saepe reprehenderit distinctio aliquid voluptates dolore
+											accusantium ducimus a laboriosam commodi earum? Modi
+											deleniti praesentium dicta sed vero. Doloribus alias
+											deserunt necessitatibus ipsam asperiores dolorum illo.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="s4">
+			<div id="particles-js"></div>
+			<h2 class="section-title">announcement</h2>
 			<div class="add-content">
 				<div class="add-right">
 					<label for="email">Sign up for our newsletter</label>
@@ -138,7 +201,9 @@
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
 						expedita doloribus, numquam sint quae assumenda error autem possimus
 						eius atque vel non sunt illum quos vitae, praesentium natus maiores
-						excepturi ipsam quis voluptates ipsum magni
+						excepturi ipsam quis voluptates ipsum magni Lorem ipsum dolor sit,
+						amet consectetur adipisicing elit. Id ut porro culpa sit laborum
+						quis?
 					</p>
 					<form class="sign-up">
 						<input
@@ -162,36 +227,25 @@
 				</div>
 			</div>
 		</section>
-		<footer>
-			<div class="contact">
-				<h2 class="section-title">
-					<i class="fa-solid fa-plus"></i>
-					<span id="section3title" data-value="Contact Us">Contact Us</span>
-				</h2>
-				<div class="social-links">
-					<div class="social-link facebook">
-						<a href="#">
-							<i class="fa-brands fa-facebook"></i>
-							<span>@FSDM-ROBOTIC</span>
-						</a>
-					</div>
-					<div class="social-link insta">
-						<a href="#">
-							<i class="fa-brands fa-instagram"></i>
-							<span>@FSDM-ROBOTIC</span>
-						</a>
-					</div>
-					<div class="social-link twitter">
-						<a href="#">
-							<i class="fa-brands fa-twitter"></i>
-							<span>#FSDM-ROBOTIC</span>
-						</a>
-					</div>
-					<div class="social-link email">
-						<a href="#">
-							<i class="fa-solid fa-envelope"></i>
-							<span>FSDM-ROBOTIC@gmail.com</span>
-						</a>
+		<footer class="footer">
+			<div>
+				<h2 class="section-title">Social media</h2>
+				<div class="foot">
+					<div class="social-links">
+						<div class="social-links">
+							<a class="social-link facebook" href="#">
+								<i class="fa-brands fa-facebook"></i>
+							</a>
+							<a class="social-link insta" href="#">
+								<i class="fa-brands fa-instagram"></i>
+							</a>
+							<a class="social-link twitter" href="#">
+								<i class="fa-brands fa-twitter"></i>
+							</a>
+							<a class="social-link email" href="#">
+								<i class="fa-solid fa-envelope"></i>
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -201,15 +255,15 @@
 				alt=""
 				class="second-logo"
 			/>
-			<!-- <img
-				loading="lazy"
-				src="./assets/second-logo.png"
-				alt=""
-				class="second-logo"
-			/> -->
 		</footer>
-		<div class="container" id="grid-container"></div>
-		
-		<script src="./src/script.js" async="true"></script>
+		<p class="att"><a href="https://github.com/3BIK8">UNID</a>&copy;</p>
+		<!-- <script src="../communScript.js" async="true"></script> -->
+		<script src="./src/particles.js">
+			particlesJS.load('particles-js', 'particles.json', function() {
+						console.log('Particles.js loaded!');
+					  });
+		</script>
+		<script src="./atropos/atropos.min.js" async></script>
+		<script src="./src/script.js" async></script>
 	</body>
 </html>
